@@ -1,0 +1,36 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion 28
+
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode 1
+        versionName "0.1"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+// sw components and libs
+apply from: './gradle/archi.gradle'
+apply from: './gradle/service.gradle'
+apply from: './gradle/network.gradle'
+apply from: './gradle/view.gradle'
+
+// debugging, dev tools
+apply from: './gradle/debugging.gradle'
+
+// test
+apply from: './gradle/statictest.gradle'
+apply from: './gradle/unittest.gradle'
