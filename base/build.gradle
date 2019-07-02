@@ -26,7 +26,7 @@ android {
     sourceSets {
         main {
             resources {
-                srcDirs "src/main/resources", "src/main/gradle"
+                srcDirs "src/main/resources", "config"
             }
         }
     }
