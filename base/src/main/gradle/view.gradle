@@ -1,0 +1,5 @@
+dependencies {
+
+    //Dialog
+    implementation 'com.afollestad.material-dialogs:core:2.0.0'
+}

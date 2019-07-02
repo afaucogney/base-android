@@ -1,0 +1,17 @@
+
+dependencies {
+    // Retrofit
+    api "com.squareup.retrofit2:retrofit:2.6.0"
+    api "com.squareup.retrofit2:converter-gson:2.5.0"
+    api "com.squareup.retrofit2:adapter-rxjava2:2.6.0"
+
+    // Okhttp interceptor
+    api "com.squareup.okhttp3:logging-interceptor:3.12.1"
+
+    // Glide
+    api "com.github.bumptech.glide:glide:4.9.0"
+    kapt "com.github.bumptech.glide:compiler:4.9.0"
+    api "com.github.bumptech.glide:okhttp3-integration:4.9.0"
+    api 'jp.wasabeef:glide-transformations:4.0.0'
+
+}
