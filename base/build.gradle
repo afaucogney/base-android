@@ -26,14 +26,12 @@ android {
     sourceSets {
         main {
             resources {
-                srcDirs "src/main/resources", "src/gradle"
+                srcDirs "src/main/resources", "src/main/gradle"
             }
         }
     }
 
 }
-
-
 
 // sw components and libs
 apply from: './gradle/archi.gradle'

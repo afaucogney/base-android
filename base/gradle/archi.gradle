@@ -32,20 +32,3 @@ dependencies {
     kapt "com.github.stephanenicolas.toothpick:toothpick-compiler:1.1.3"
 
 }
-
-android {
-    kapt {
-        arguments {
-            arg("toothpick_registry_package_name", "fr.afaucogney.mobile.android.app.becomeaheetcher")
-        }
-    }
-}
-
-/*
-
-    apply plugin: 'realm-android'
-
-    // Kotlin Realm Extensions
-    implementation "com.github.vicpinm:krealmextensions:2.2.0"
-
- */
